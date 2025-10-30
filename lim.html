@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limwel-Yane</title>
+  <link rel="stylesheet" href="yan.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="head">
+        <h3>My Portfolio</h3>
+      </div>
+      <div class="lim">
+        <img src="imglim.jpg" alt="personal image" />
+      </div>
+      <div class="name">
+        <h1>LIMWEL REN YANE</h1>
+        <h2>Graphic Designer | Page Layout</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('about')">About</a></li>
+          <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+          <li><a href="#" onclick="showSection('contacts')">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+      </div>
+    </header>
+
+    <section class="about section" id="about">
+      <h2>About</h2>
+      <p>
+        Hello! I'm Lim, a student from Cagayan De Oro City Philippines. I'm interested with visual design. Over the past few years, I've worked on a variety of projects, including logos, posters, and web layouts. I also have basic skills in HTML and CSS, and I have included my personal portfolio as a demonstration of my work.
+      </p>
+      <p>
+        I'm currently looking for part-time design work to gain more experience and grow as a creative.
+      </p>
+      <a href="Limwel-resume.pdf" target="_blank">
+        <button>My Resume</button>
+      </a>
+    </section>
+
+    <section id="skills" class="section" style="display: none;">
+      <h2>Skills</h2>
+      <ul>
+        <li>Graphic Design (Adobe Photoshop, Canva)</li>
+        <li>Web Design (Basic HTML, CSS)</li>
+        <li>Page Layout</li>
+        <li>Basic Python</li>
+      </ul>
+      <h4>Photo/Video Editing</h4>
+      <ul>
+        <li>Canva</li>
+        <li>Adobe Photoshop</li>
+        <li>Movavi Video Editor</li>
+      </ul>
+
+    </section>
+
+    <section id="projects" class="section" style="display: none;">
+      <h2>Projects</h2>
+      <ul>
+         <li>Portfolio Website</li>
+         <li>Business Logo</li>
+         <li>Poster</li>
+         <li>Web Design</li>
+      </ul>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+
+        <div id="slides">
+          <div class="inner">
+
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <img src="Coffee poster.png" alt="Coffe poster">
+                <h2>Poster</h2>
+              </div>
+            </div>
+
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <img src="My Logo.png" alt="Logo">
+                <img src="Sweet garlic.png" alt="GarlicLogo">
+                <h2>Logo</h2>
+              </div>
+            </div>
+
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <h2>Layouts</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="controls">
+          <button class="btn"><label for="slide1"><b>Poster</b></label></button>
+          <button class="btn"><label for="slide2"><b>Logo</b></label></button>
+          <button class="btn"><label for="slide3"><b>Web Design</b></label></button>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contacts" class="section" style="display: none;">
+      <h2>Contacts</h2>
+      <li>Email :  <button><a style="font-size: medium; color: darkblue;" href="mailto:limwelyane@gmail.com">limwelyane@gmail.com</a></button></li>
+      <li>Facebook Account :   <button><a style="font-size: medium; color: darkblue;" href=https//www.facebook.com/share/1EpubHa6kN/ target="_blank"> Limwel Yane</a></button></li>
+      <li>Contact Number : (63) 9398-866-823</li>
+    </section>
+  </div>
+
+  <script>
+  function showSection(id) {
+    
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+
+    const target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+    }
+  }
+
+  window.onload = function () {
+    showSection('about');
+  };
+</script>
+
+</body>
+</html>
