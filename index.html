@@ -17,15 +17,15 @@
       </div>
       <div class="name">
         <h1>LIMWEL REN YANE</h1>
-        <h2>Graphic Designer | Page Layout</h2>
+        <h2>Graphic Designer | Encoder</h2>
       </div>
       <nav>
         <ul>
-          <li><a href="#" onclick="showSection('about')">About</a></li>
-          <li><a href="#" onclick="showSection('skills')">Skills</a></li>
-          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-          <li><a href="#" onclick="showSection('contacts')">Contacts</a></li>
-        </ul>
+          <li><a href="#" onclick="showSection('about')"><button>About</button></a></li>
+          <li><a href="#" onclick="showSection('skills')"><button>Skills</button></a></li>
+          <li><a href="#" onclick="showSection('projects')"><button>Projects</button></a></li>
+          <li><a href="#" onclick="showSection('contacts')"><button>Contacts</button></a></li>
+        </ul> 
       </nav>
       <div class="icons">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -42,12 +42,12 @@
       <p>
         I'm currently looking for part-time design work to gain more experience and grow as a creative.
       </p>
-      <a href="Limwel-resume.pdf" target="_blank">
-        <button>My Resume</button>
+      <a href="My Resume.pdf" target="_blank">
+        <button class="btn_resume">My Resume</button>
       </a>
     </section>
 
-    <section id="skills" class="section" style="display: none;">
+    <section id="skills" class="section skills" style="display: none;">
       <h2>Skills</h2>
       <ul>
         <li>Graphic Design (Adobe Photoshop, Canva)</li>
@@ -64,80 +64,48 @@
 
     </section>
 
-    <section id="projects" class="section" style="display: none;">
+    <section id="projects" class="section projects1">
       <h2>Projects</h2>
-      <ul>
-         <li>Portfolio Website</li>
-         <li>Business Logo</li>
-         <li>Poster</li>
-         <li>Web Design</li>
-      </ul>
-      <div id="slider">
-        <input type="radio" name="slider" id="slide1" checked>
-        <input type="radio" name="slider" id="slide2">
-        <input type="radio" name="slider" id="slide3">
-
-        <div id="slides">
-          <div class="inner">
-
-            <div class="slide slide_1">
-              <div class="slide-content">
-                <img src="Coffee poster.png" alt="Coffe poster">
-                <h2>Poster</h2>
-              </div>
-            </div>
-
-            <div class="slide slide_2">
-              <div class="slide-content">
-                <img src="My Logo.png" alt="Logo">
-                <img src="Sweet garlic.png" alt="GarlicLogo">
-                <h2>Logo</h2>
-              </div>
-            </div>
-
-            <div class="slide slide_3">
-              <div class="slide-content">
-                <h2>Layouts</h2>
-              </div>
-            </div>
-          </div>
+      <div class="inside">
+        <div class="group">
+          <div class="card"><img src="Coffee poster.png" alt="poster"/></div>
+          <div class="card"><img src="Sweet garlic.png" alt="sweet"/></div>
+          <div class="card"><img src="My Logo.png" alt="logo"/></div>
         </div>
-
-        <div id="controls">
-          <button class="btn"><label for="slide1"><b>Poster</b></label></button>
-          <button class="btn"><label for="slide2"><b>Logo</b></label></button>
-          <button class="btn"><label for="slide3"><b>Web Design</b></label></button>
+        <div class="group">
+          <div class="card"><img src="Coffee poster.png" alt="poster"/></div>
+          <div class="card"><img src="Sweet garlic.png" alt="sweet"/></div>
+          <div class="card"><img src="My Logo.png" alt="logo"/></div>
         </div>
       </div>
-
     </section>
 
     <section id="contacts" class="section" style="display: none;">
       <h2>Contacts</h2>
       <li>Email :  <button><a style="font-size: medium; color: darkblue;" href="mailto:limwelyane@gmail.com">limwelyane@gmail.com</a></button></li>
-      <li>Facebook Account :   <button><a style="font-size: medium; color: darkblue;" href=https//www.facebook.com/share/1EpubHa6kN/ target="_blank"> Limwel Yane</a></button></li>
+      <li>Facebook Account :   <button><a style="font-size: medium; color: darkblue;" href="https://www.facebook.com/share/1EpubHa6kN/ target=" blank"> Limwel Yane</a></button></li>
       <li>Contact Number : (63) 9398-866-823</li>
     </section>
   </div>
 
   <script>
-  function showSection(id) {
+    function showSection(id) {
     
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-      section.style.display = 'none';
-    });
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
 
-    const target = document.getElementById(id);
-    if (target) {
-      target.style.display = 'block';
+      const target = document.getElementById(id);
+      if (target) {
+        target.style.display = 'block';
+      }
     }
-  }
 
-  window.onload = function () {
-    showSection('about');
-  };
-</script>
+    window.onload = function () {
+      showSection('about');
+    };
+  </script>
 
 </body>
 </html>
